@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "firstName": "Aliya",
+    "lastName": "Mustafina",
+    "DOB": "1994-09-20T00:00:00.511Z",
+    "skills": ["the Mustafina"],
+    "countryOfOrigin": "Russia"
+  },
+
+  {
+    "id": 2,
+    "firstName": "Catalina",
+    "lastName": "Ponor",
+    "DOB": "1987-08-20T00:00:00.511Z",
+    "skills": ["onodi"],
+    "countryOfOrigin": "Romania"
+  },
+
+  {
+    "id": 3,
+    "firstName": "Larisa",
+    "lastName": "Iordache",
+    "DOB": "1996-06-19T00:00:00.511Z",
+    "skills": ["triple twist"],
+    "countryOfOrigin": "Romania"
+  },
+
+  {
+    "id": 4,
+    "firstName": "Angelina",
+    "lastName": "Melnikova",
+    "DOB": "2000-07-18T00:00:00.511Z",
+    "skills": ["full twisting double layout"],
+    "countryOfOrigin": "Russia"
+  }
+]
