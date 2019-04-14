@@ -14,6 +14,7 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var gymnastsRouter = require("./routes/gymnasts");
 var searchGymnastbyNameRouter = require("./routes/searchGymnastByName");
+var createGymnastRouter = require("./routes/createGymnast");
 
 var app = express();
 
@@ -31,6 +32,7 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/gymnasts", gymnastsRouter);
 app.use("/searchGymnast", searchGymnastbyNameRouter);
+app.use("/createGymnast", createGymnastRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
