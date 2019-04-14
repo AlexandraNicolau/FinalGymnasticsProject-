@@ -4,9 +4,16 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
+var mongoose = require("mongoose");
+mongoose.connect(
+  "mongodb+srv://appservice:Nabarro123@cluster0-c9vlg.mongodb.net/Gymnastics?retryWrites=true",
+  { useNewUrlParser: true }
+);
+
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var gymnastsRouter = require("./routes/gymnasts");
+var searchGymnastbyNameRouter = require("./routes/searchGymnastByName");
 
 var app = express();
 
@@ -23,6 +30,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/gymnasts", gymnastsRouter);
+app.use("/searchGymnast", searchGymnastbyNameRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
